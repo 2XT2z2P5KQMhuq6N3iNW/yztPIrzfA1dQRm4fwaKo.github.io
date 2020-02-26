@@ -4,7 +4,20 @@
   <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript"> 
+if (sessionStorage.getItem('key')!='f') { 
 
+var password = 'f'  
+password=prompt('PW ACCESS:',''); 
+if (password == 'f') { 
+sessionStorage.setItem('key', 'f');
+} 
+
+if (password != 'f') { 
+location.href='https://google.com/'; 
+} 
+};
+  </script>
     <style>
       * {
         max-width: 100%;

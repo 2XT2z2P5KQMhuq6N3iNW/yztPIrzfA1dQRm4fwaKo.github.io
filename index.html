@@ -68,10 +68,11 @@
 
     <script>
       document.getElementById('iframe').onload = function() {
-        alert($('#iframe').contents().find('body').css('background'));
-                alert($('#iframe').contents().find('body').css('background-image'));
-                alert($('#iframe').contents().find('body').css('background-color'));
+  //      alert($('#iframe').contents().find('body').css('background'));
+     //           alert($('#iframe').contents().find('body').css('background-image'));
+   //             alert($('#iframe').contents().find('body').css('background-color'));
 $('body').css('background', $('#iframe').contents().find('body').css('background'));
+        $('#iframe').contents().find('body').css('background', 'unset');
  $('#iframe').contents().find('body').prepend("dyupif");
       };
 

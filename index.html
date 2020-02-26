@@ -26,10 +26,9 @@ html {
           -ms-overflow-style: none;
 }
       p {
+                max-width: 80vw;
         display: inline-block;
         padding: 6px 12px;
-        color: black;
-        background-color: red
       }
 
       iframe {
@@ -74,6 +73,8 @@ html {
      //           alert($('#iframe').contents().find('body').css('background-image'));
    //             alert($('#iframe').contents().find('body').css('background-color'));
 $('body').css('background', $('#iframe').contents().find('body').css('background'));
+        $('a').css('background', $('#iframe').contents().find('body').css('background'));
+
         $('#iframe').contents().find('body').css('background', 'unset');
  $('#iframe').contents().find('head').prepend("<style> * {    max-width: 100% !important;    word-break: break-word;    word-wrap: break-word;    box-sizing: border-box;}   ::-webkit-scrollbar {        display: none !important;        width: 0px;      }    </style>");
       };

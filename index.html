@@ -61,6 +61,12 @@ function myFunction() {
 
 <iframe id="iframe" name="iframe" src= "top.html" frameBorder="0">
     
+<script>  
+document.getElementById('iframe').onload = function() {
+console.log($(iframe).contents().find('body').css('background-image'));
+console.log($(iframe).contents().find('body').css('background'));
 
+        }
+</script>                                                                 
 </body>
 </html>

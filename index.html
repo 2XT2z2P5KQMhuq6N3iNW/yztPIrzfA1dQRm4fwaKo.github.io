@@ -82,6 +82,11 @@ $('body').css('background', $('#iframe').contents().find('body').css('background
       };
 
     </script>
+    <script>
+      window.onerror = function(message, url, line) {
+  alert(message + ', ' + url + ', ' + line);
+};
+    </script>
   </body>
 
 </html>

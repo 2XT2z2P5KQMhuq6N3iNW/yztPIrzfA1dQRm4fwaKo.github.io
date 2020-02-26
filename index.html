@@ -46,6 +46,8 @@ html {
 
     </style>
     <script>
+          $("#HEADEVIL").text("👺");
+
       function myFunction() {
         var x = document.getElementById("myDIV");
         if (x.style.display === "none") {
@@ -79,8 +81,9 @@ $('body').css('background', $('#iframe').contents().find('body').css('background
         $('#iframe').contents().find('body').css('background', 'unset');
  $('#iframe').contents().find('head').prepend("<style> * {    max-width: 100% !important;    word-break: break-word;    word-wrap: break-word;    box-sizing: border-box;}   ::-webkit-scrollbar {        display: none !important;        width: 0px;      }    </style>");
             document.title = document.getElementById("iframe").contentDocument.title;
+        if (document.title !== "") {
     $("#HEADEVIL").text("👺 " + document.title + " 👺");
-
+        };
       };
 
     </script>

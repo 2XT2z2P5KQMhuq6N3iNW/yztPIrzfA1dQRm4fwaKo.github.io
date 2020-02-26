@@ -11,6 +11,13 @@ max-width:80vw !important;
 word-break:break-word;
 word-wrap: break-word;
 box-sizing:border-box;
+               -ms-overflow-style: none;
+
+}
+            *::-webkit-scrollbar {
+    display: none !important;
+                  width: 0px;
+    background: transparent; /* make scrollbar transparent */
 }
     
 p {
@@ -29,16 +36,7 @@ p {
         -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
         overflow: auto;z-index: -9999;
-    }
-        ::-webkit-scrollbar {
-    display: none !important;
-}
-
-/* Hide scrollbar for IE and Edge */
- {
-    -ms-overflow-style: none;
-}
-    
+    }    
 </style>
        <script>
 function myFunction() {

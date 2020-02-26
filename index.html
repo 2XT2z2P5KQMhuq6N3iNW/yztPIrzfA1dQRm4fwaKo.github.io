@@ -75,7 +75,7 @@ html {
    //             alert($('#iframe').contents().find('body').css('background-color'));
 $('body').css('background', $('#iframe').contents().find('body').css('background'));
         $('#iframe').contents().find('body').css('background', 'unset');
- $('#iframe').contents().find('head').prepend("<style>    ::-webkit-scrollbar {        display: none !important;        width: 0px;      }    </style>");
+ $('#iframe').contents().find('head').prepend("<style> * {    max-width: 80vw !important;    word-break: break-word;    word-wrap: break-word;    box-sizing: border-box;}   ::-webkit-scrollbar {        display: none !important;        width: 0px;      }    </style>");
       };
 
     </script>
